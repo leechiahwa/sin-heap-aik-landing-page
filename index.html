@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sin Heap Aik</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <script src="https://kit.fontawesome.com/c12c5c5003.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main-container">
+        <header id="header">
+            <div id="nav-container" class="sticky">
+                <!-- search bar -->
+                <div class="top">
+                    <!-- search bar in here -->
+                    <div class="search-bar-container">
+                        <input class="search-bar" type="search" placeholder="搜索" autocomplete="off">
+                        <button class="btn-search" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </div>
+                <nav class="navbar">
+                    <div class="logo-container">
+                        <a href="#">
+                            <img width="603" height="72" src="/img/logo.png" alt="Sin Heap Aik logo">
+                        </a>
+                    </div>
+                    <ul class="navbar-items" id="navbar">
+                        <li>
+                            <a href="#" class="active">首页</a>
+                        </li>
+                        <li>
+                            <a href="#">关于</a>
+                        </li>
+                        <li>
+                            <a href="#">产品</a>
+                        </li>
+                        <li>
+                            <a href="#">博客</a>
+                        </li>
+                        <li>
+                            <a href="#">职业</a>
+                        </li>
+                        <li>
+                            <a href="#">联络</a>
+                        </li>
+                        <div class="border"></div>
+                        <div class="language">
+                            <a href="#" class="language-selector">CN</a>
+                        </div>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa-solid fa-bars"></i>
+                        </a>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main id="main">
+            <div class="hero">
+                <!-- TODO -->
+                <!-- <div class="hero-border"></div> -->
+                <div class="hero-image-text">进口及本地各种神料用品</div>
+                <div class="hero-image-btn">
+                    <a href="#">理解更多</a>
+                </div>
+                <!-- <button class="hero-image-btn">理解更多</button> -->
+                <div class="parallax hero-image">
+                    <img class="parallax" src="img/Depositphotos_632292320_L.jpg" alt="">
+                </div>
+            </div>
+            <div id="about" class="container">
+                <div class="about">
+                    <h4>
+                        <span style="font-weight: 400;">关于</span>
+                        <br>新协益
+                    </h4>
+                    <p>新协益贸易（马）有限公司成立于1977年12月6日，是一家以神料为主 , 并且综合研发, 生产及销售为一体的专业神料零售兼批发商。</p>
+                    <button class="btn">
+                        <a href="#">理解更多</a>
+                    </button>
+                    <div class="icon-label-container">
+                        <div class="label-column">
+                            <img width="76" height="76" src="img/about-icon-1.png" alt="Icon">
+                            <p>专业零售商</p>
+                        </div>
+                        <div class="label-column">
+                            <img width="76" height="76" src="img/about-icon-2.png" alt="Icon">
+                            <p>特别定制</p>
+                        </div>
+                        <div class="label-column">
+                            <img width="76" height="76" src="img/about-icon-3.png" alt="Icon">
+                            <p>一站式服务</p>
+                        </div>
+                        <div class="label-column">
+                            <img width="76" height="76" src="img/about-icon-4.png" alt="Icon">
+                            <p>从海外国家进口</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-container">
+                    <div class="image1">
+                        <img src="img/about-1-jpg.webp" alt="Image 1">
+                    </div>
+                    <div class="image2">
+                        <img src="img/about-2-jpg.webp" alt="Image 2">
+                    </div>
+                    <div class="image3">
+                        <img src="img/about-3-jpg.webp" alt="Image 2">
+                    </div>
+                    <div class="image4">
+                        <img src="img/about-4-jpg.webp" alt="Image 2">
+                    </div>
+                </div>
+            </div>
+            <!-- <div id="products">
+                <h4>产品</h4>
+                <div class="grid-container">
+                    <div class="image-category-1">
+                        <img class="product-img" src="img/category-1-jpg.webp" alt="">
+                        <p>甘文烟/元宝粒/檀香粉</p>
+                        <img src="img/Asset-62.png" alt="">
+                    </div>
+                    <div class="image-category-2">
+                        <img class="product-img" src="img/category-2-jpg.webp" alt="">
+                        <p>盘香/塔粒</p>
+                        <img src="" alt="">
+                    </div>
+                    <div class="image-category-3">
+                        <img class="product-img" src="img/category-3-jpg.webp" alt="">
+                        <p>蜡烛</p>
+                    </div>
+                    <div class="image-category-4">
+                        <img class="product-img" src="img/category-4-jpg.webp" alt="">
+                        <p>纸张</p>
+                    </div>
+                    <div class="image-category-5">
+                        <img class="product-img" src="img/category-5-jpg.webp" alt="">
+                        <p>包装香</p>
+                    </div>
+                    <div class="image-category-6">
+                        <img class="product-img" src="img/category-6-jpg.webp" alt="">
+                        <p>水晶酥油烛</p>
+                    </div>
+                    <div class="image-category-7">
+                        <img class="product-img" src="img/category-7-jpg.webp" alt="">
+                        <p>烧金桶</p>
+                    </div>
+                    <div class="image-category-8">
+                        <img class="product-img" src="img/category-8-jpg.webp" alt="">
+                        <p>冥币</p>
+                    </div>
+                </div>
+                <div style="text-align: center;">
+                    <button class="btn">
+                        <a href="#">理解更多</a>
+                    </button>
+                </div>
+            </div> -->
+            <div id="contact">
+                <div class="contact-image">
+                    <img src="img/contact-1-jpg.webp" alt="Contact 1">
+                    <img src="img/contact-2-jpg.webp" alt="Contact 2">
+                    <img src="img/contact-3-jpg.webp" alt="Contact 3">
+                    <h4>查询更多关于宗教用品</h4>
+                    <button class="btn">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <a href="#">Whatsapp</a>
+                    </button>
+                </div>
+            </div>
+        </main>
+        <footer id="footer">
+            <div class="footer-top">
+                <div class="company-info">
+                    <img width="321" height="146" src="img/footer-logo.png" alt="">
+                    <h6>新协益贸易（马）有限公司</h6>
+                    <h6>
+                        SIN HEAP AIK TRADING (M) SDN BHD <br />
+                        <span style="font-weight: 200;">201001001056 (0885629K)</span>
+                    </h6>
+                    <div class="icons-container">
+                        <img src="img/facebook.png" alt="Facebook logo">
+                        <img src="img/lazada.png" alt="Lazada logo">
+                        <img src="img/shopee.png" alt="Shopee logo">
+                    </div>
+                </div>
+                <div class="quick-links">
+                    <h6>快速链接</h6>
+                    <ul>
+                        <li><a href="#">首页</a></li>
+                        <li><a href="#">关于</a></li>
+                        <li><a href="#">产品</a></li>
+                        <li><a href="#">博客</a></li>
+                        <li><a href="#">职业</a></li>
+                        <li><a href="#">联络</a></li>
+                    </ul>
+                </div>
+                <div class="contact-info">
+                    <div><img src="img/map.png" alt="map icon">
+                        1675, Lorong Iks Simpang Ampat H, Taman Iks Simpang Ampat,
+                        14100 Simpang Ampat, Pulau Pinang</div>
+                    <div><img src="img/call.png" alt="Phone icon">
+                        04-588 9186</div>
+                    <div><img src="img/fax.png" alt="Fax icon">
+                        04-588 9617</div>
+                    <div><img src="img/email.png" alt="Email icon">
+                        sinheapaik20@gmail.com</div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Sin Heap Aik Trading (M) Sdn. Bhd. 201001001056 (0885629K). All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="/main.js"></script>
+</body>
+
+</html>
